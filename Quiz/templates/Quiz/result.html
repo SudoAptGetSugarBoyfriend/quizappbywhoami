@@ -1,0 +1,26 @@
+{% extends 'Quiz/dependencies.html' %}
+
+{% block content %}
+
+<div class="container " style="text-align:center">
+        
+    <div class="card-columns" style="padding-left: 250px; margin: 50px;">
+        <div class="card" align="centre " style="width: 32rem; border:5px black solid">
+            <img class="card-img-top" src="http://kmit.in/emagazine/wp-content/uploads/2018/02/karnataka-results.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title"><b>Score: {{score}}</b></h4>
+
+                <p class="card-text"><b>Percentage:</b> {{percent}}%</p>
+                <p class="card-text"><b>Time Taken:</b> {{time}} seconds</p>
+                <p class="card-text"><b>Correct answers:</b> {{correct}}</p>
+                <p class="card-text"><b>Incorrect answers:</b> {{wrong}}</p>
+                <p class="card-text"><b>Total questions:</b> {{total}}</p>
+                <br>
+                <h5>All the best for next quiz!</h5>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
